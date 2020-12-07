@@ -79,36 +79,36 @@ function [] = plotSimuatedVsReferencePfPR(filename)
         data = data;
     end
     line([data(1) data(2)], [data(1) data(2)], 'Color', 'black', 'LineStyle', '-.');
-    text(data(2),data(2),'\leftarrow +0%')
+    text(data(2),data(2),'\leftarrow +0%','FontSize',14)
     % 5%
-    line([data(1) data(2)], [data(1)*1.05 data(2)*1.05], 'Color', 'cyan', 'LineStyle', '-.');
-    text(data(2),data(2)*1.05,'\leftarrow +5%')
+    line([data(1) data(2)], [data(1)*1.05 data(2)*1.05], 'Color', 'green', 'LineStyle', '-.');
+    text(data(2),data(2)*1.05,'\leftarrow +5%','FontSize',14)
     
-    line([data(1) data(2)], [data(1)*0.95 data(2)*0.95], 'Color', 'cyan', 'LineStyle', '-.');
-    text(data(2),data(2)*0.95,'\leftarrow -5%')
+    line([data(1) data(2)], [data(1)*0.95 data(2)*0.95], 'Color', 'green', 'LineStyle', '-.');
+    text(data(2),data(2)*0.95,'\leftarrow -5%','FontSize',14)
     % 10%
-    line([data(1) data(2)], [data(1)*1.1 data(2)*1.1], 'Color', 'blue', 'LineStyle', '-.');
-    text(data(2),data(2)*1.1,'\leftarrow +10%')
+    line([data(1) data(2)], [data(1)*1.1 data(2)*1.1], 'Color', 'cyan', 'LineStyle', '-.');
+    text(data(2),data(2)*1.1,'\leftarrow +10%','FontSize',14)
     
-    line([data(1) data(2)], [data(1)*0.9 data(2)*0.9], 'Color', 'blue', 'LineStyle', '-.');
-    text(data(2),data(2)*0.9,'\leftarrow -10%')
+    line([data(1) data(2)], [data(1)*0.9 data(2)*0.9], 'Color', 'cyan', 'LineStyle', '-.');
+    text(data(2),data(2)*0.9,'\leftarrow -10%','FontSize',14)
     % 15%
-    line([data(1) data(2)], [data(1)*1.15 data(2)*1.15], 'Color', 'green', 'LineStyle', '-.');
-    text(data(2),data(2)*1.15,'\leftarrow +15%')
+    line([data(1) data(2)], [data(1)*1.15 data(2)*1.15], 'Color', 'blue', 'LineStyle', '-.');
+    text(data(2),data(2)*1.15,'\leftarrow +15%','FontSize',14)
     
-    line([data(1) data(2)], [data(1)*0.85 data(2)*0.85], 'Color', 'green', 'LineStyle', '-.');
-    text(data(2),data(2)*0.85,'\leftarrow -15%')
+    line([data(1) data(2)], [data(1)*0.85 data(2)*0.85], 'Color', 'blue', 'LineStyle', '-.');
+    text(data(2),data(2)*0.85,'\leftarrow -15%','FontSize',14)
     % 20%
     line([data(1) data(2)], [data(1)*1.2 data(2)*1.2], 'Color', 'red', 'LineStyle', '-.');
-    text(data(2),data(2)*1.2,'\leftarrow +20%')
+    text(data(2),data(2)*1.2,'\leftarrow +20%','FontSize',14)
     
     line([data(1) data(2)], [data(1)*0.8 data(2)*0.8], 'Color', 'red', 'LineStyle', '-.');
-    text(data(2),data(2)*0.80,'\leftarrow -20%')
+    text(data(2),data(2)*0.80,'\leftarrow -20%','FontSize',14)
     
     ylabel('Simulated {\it Pf}PR_{2 to 10}, mean of peaks');
     xlabel('Reference {\it Pf}PR_{2 to 10}');
 
-    title('Burkina Faso, Simuated versus Reference {\it Pf}PR_{2 to 10} values');
+    title('Rwanda, Simuated versus Reference {\it Pf}PR_{2 to 10} values');
 
     graphic = gca;
     graphic.FontSize = 18;
